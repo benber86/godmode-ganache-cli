@@ -9,7 +9,7 @@
 	"scripts": {
 		"update": "npm update ganache-core",
 		"start": "node cli.js",
-		"start-fork": "node cli.js --hardfork istanbul --fork https://eth-mainnet.alchemyapi.io/v2/$ALCHEMY_KEY --mnemonic brownie  --gasLimit 12000000 -e 1000 --db=/home/.ganache",
+		"start-fork": "node cli.js --hardfork istanbul --fork https://eth-mainnet.alchemyapi.io/v2/$ALCHEMY_KEY --mnemonic brownie  --gasLimit 12000000 -e 1000 --db=~/.ganache --chainId 1 -p 8545",
 		"build": "webpack-cli --config ./webpack/webpack.node.config.js",
 		"otp": "node ./scripts/generate-otp.js",
 		"releaseNotes": "npx semantic-release --dry-run"

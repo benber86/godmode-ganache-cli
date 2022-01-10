@@ -20,4 +20,4 @@ ENV DOCKER true
 
 EXPOSE 8545
 
-CMD node /app/ganache-core.docker.cli.js --fork https://mainnet.infura.io/v3/$INFURA_PROJECT_ID  -m 'luxury visual dentist trumpet banana immune that charge baby board finger pet' -u '0xb7f993e0b314148e02c105badb12b02b1143e704' 
+CMD node /app/ganache-core.docker.cli.js  --hardfork istanbul --fork https://eth-mainnet.alchemyapi.io/v2/$ALCHEMY_KEY --mnemonic brownie  --gasLimit 12000000 
